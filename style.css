@@ -1,0 +1,367 @@
+body {
+	background-image: url(./images/clouds.jpg);
+	background-size: cover;
+	background-repeat: no-repeat; 
+	margin: 0;
+	color: #616161;
+	font-family: 'Arsenal', sans-serif;
+	height: 100%;
+	background-position: fixed;
+	overflow: hidden;
+}
+.hide {
+	opacity: 0;
+}
+/*** Left Panel ***/
+.holder {
+	transition: all 1s ease-in-out;
+}
+.inactive {
+	opacity: .3;
+}
+.box {
+	height: 100vh;
+	width: 19%;
+	background-color: #fff;
+	position: absolute;
+	float: left;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	padding: 0px 20px;
+}
+form {
+	padding: 0 30px;
+	margin-top: 60%;
+	margin-bottom: 30%;
+}
+form p {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.3em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+input[type="text"], input[type="email"], textarea {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    height: 45px;
+    font-size: 1.1em;
+}
+textarea {
+    resize:none;
+    overflow: hidden;
+}
+label {
+	margin: 10px 14px 3px 0;
+	font-weight: bold;
+}
+.nav {
+	position: absolute;
+	bottom: 0;
+    padding-bottom: 10px;
+    width: 78%;
+}
+.nav p {
+	-webkit-margin-before: -.1em;
+	display: inline-block;
+}
+.left, .right {
+	display: inline-block;
+	width: 50%;
+	float: left;
+}
+.right {
+	text-align: right;
+}
+.about-link {
+	text-align: left;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	cursor: pointer;
+}
+.about-link:hover {
+	-webkit-transform: translateX(-8px);
+	transform: translateX(-8px);
+}
+.work-link {
+	text-align: right;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	cursor: pointer;
+}
+.work-link:hover {
+	-webkit-transform: translateX(8px);
+	transform: translateX(8px);
+}
+.send {
+	width: 60px;
+	margin: 20px auto;
+	display: block;
+	opacity: 0.8;
+	transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+.send:hover {
+	opacity: 1;
+}
+
+/*** Right Panel ***/
+
+.social {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.social img {
+	padding-left: 7px;
+	opacity: 0.8;
+	transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -webkit-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+}
+.social img:hover {
+	opacity: 1;
+}
+.text {
+	position: absolute;
+	width: 63%;
+	right: 0;
+	bottom: 20px;
+	color: #FEEEE6;
+}
+.text h1 {
+	font-size: 17em;
+	font-family: 'Playfair Display', serif;
+	line-height: 0;
+	-webkit-margin-before: 0.4em;
+    -webkit-margin-after: 0.6em;
+}
+.text h4 {
+	text-align: right;
+	margin-right: 25px;
+	font-size: 1.7em;
+	font-family: 'Playfair Display', serif;
+}
+.text p {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.text hr {
+	color: #FEEEE6;
+	border-width: 3px;
+    border-color: #fff;
+    border-style: solid;
+}
+
+/*** WORK ***/
+.work-holder {
+	position: absolute;
+	height: 100%;
+	width: 96%;
+	background-color: #fff;
+	overflow: scroll;
+	transition: all 1.2s ease-in-out;
+	right: -100%;
+	color: #616161;
+	font-family: 'Arsenal', sans-serif;
+	line-height: 1.5;
+	padding-bottom: 65px;
+}
+.work-holder hr {
+	margin: 60px 0;
+}
+.work-active {
+	right: 4%;
+}
+.work-close {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 24px;
+	cursor: pointer;
+	opacity: .8;
+	transition: transform 0.1s linear;
+}
+.work-close:hover {
+	opacity: 1;
+}
+.work-spin {
+	transform: rotate(90deg);
+}
+.work-holder h1 {
+	text-align: center;
+    margin: 100px 0 10px 0;
+    font-family: 'Playfair Display', serif;
+}
+.work-holder h3 {
+	font-size: 1.4em;
+}
+.col-md-7 img {
+	width: 95%;
+	margin: 20px;
+}
+.col-md-5 {
+	padding: 15px;
+	font-size: 1.2em;
+}
+.work-holder .row {
+	padding: 0 30px;
+}
+
+/*** ABOUT ***/
+.about-holder {
+	font-family: 'Arsenal', sans-serif;
+	position: absolute;
+	height: 100%;
+	width: 96%;
+	background-color: #40353A;
+	overflow: scroll;
+	transition: all 1.2s ease-in-out;
+	left: -100%;
+	color: #fff;
+}
+.about-active {
+	left: 4%;
+}
+.about-close {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 24px;
+	cursor: pointer;
+	opacity: .8;
+	transition: transform 0.1s linear;
+}
+.about-close:hover {
+	opacity: 1;
+}
+.about-spin {
+	transform: rotate(-90deg);
+}
+.about-holder .row {
+	height: 100%;
+}
+.about-holder .col-md-5 {
+	height: 100%;
+}
+.linx-background {
+	width: 310px;
+	height: 310px;
+	border-radius: 50%;
+	margin: auto;
+	background-color: #534D4F;
+	padding: 5px;
+	position: relative;
+	margin-top: 7%;
+}
+.linx-pic {
+	width: 300px;
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+}
+.about-holder h1 {
+	text-align: center;
+    margin: 100px 0 40px 0;
+    font-family: 'Playfair Display', serif;
+}
+.about-holder hr {
+	margin-bottom: 40px;
+}
+
+/*** Message Box ***/
+.dark {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	background-color: #000;
+	opacity: 0.7;
+	transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    -webkit-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+}
+.message-sent {
+	position: absolute;
+	top: 39%;
+	bottom: 39%;
+	background-color: white;
+	border-radius: 7px;
+	font-family: 'Arsenal', sans-serif;
+	left: 30%;
+	right: 30%;
+	padding: 40px;
+	text-align: center;
+	border: 2px solid #333333;
+	opacity: 1;
+	transition: opacity 3s ease-in;
+}
+.message-sent p {
+	margin-bottom: 17px;
+	font-size: 1.2em;
+	
+}
+
+/*** Keyframes ***/
+
+
+/*** Media Queries ***/
+@media (max-width: 960px) {
+	.box {
+		top: 330px;
+		height: inherit;
+		width: 100%;
+		float: none;
+	}
+	.text {
+		top: 10%;
+		width: 80%;
+	}
+	.text h1 {
+		font-size: 12em;
+	}
+	form {
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+	input[type="text"], input[type="email"], textarea {
+		width: 100%;
+	}
+	.nav {
+		width: 94%;
+	}
+}
+@media (max-width: 768px) {
+	.text h1 {
+		font-size: 7em;
+	}
+	.message-sent {
+		top: 20%;
+		height: 200px;
+		padding: 30px 25px;
+	}
+}
