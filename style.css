@@ -117,9 +117,12 @@ label {
 	transform: translateX(8px);
 }
 .send {
-	width: 60px;
-	margin: 20px auto;
-	display: block;
+    width: 60px;
+    clip-path: polygon(0 0, 100% 50%, 0 100%, 0 60%, 78% 50%, 0 40%);
+    height: 50px;
+    animation: colors-four 11s infinite;
+    margin: 20px auto;
+	display: block
 	opacity: 0.8;
 	transition: opacity .5s ease-out;
     -moz-transition: opacity .5s ease-out;
@@ -369,3 +372,13 @@ label {
 		padding: 30px 25px;
 	}
 }
+
+@keyframes colors {
+  0% {
+    background-color: #FF0082; }
+  16.5% {
+    background-color: #F7FF00; }
+  82.5% {
+    background-color: #008BFF; }
+  100% {
+    background-color: #FF0082; } }
