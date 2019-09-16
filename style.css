@@ -103,7 +103,7 @@ label {
       display: inline-block;
       width: 8px;
       height: 8px;
-      margin-right: 3px;
+      margin-right: 6px;
       -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
       clip-path: polygon(100% 0, 0 50%, 100% 100%);
       animation: colors-two 11s infinite;
@@ -111,29 +111,33 @@ label {
       -moz-transition: all 400ms ease-in;
       transition: all 500ms ease-in;
 }
-.triangle-left:nth-of-type(2) {
-	animation: colors-six 11s infinite;
-}
-.triangle-left:nth-of-type(3) {
-	animation: colors 11s infinite;
-}
-.triangle-rightt:nth-of-type(2) {
-	animation: colors-five 11s infinite;
-}
-.triangle-rightt:nth-of-type(3) {
-	animation: colors-two 11s infinite;
-}
 .triangle-right {
       display: inline-block;
       width: 8px;
       height: 8px;
-      margin-left: 3px;
+      margin-left: 6px;
       -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
       clip-path: polygon(100% 50%, 0 0, 0 100%);
       animation: colors-three 11s infinite;
       -webkit-transition: all 400ms ease-in;
       -moz-transition: all 400ms ease-in;
       transition: all 500ms ease-in;
+}
+.triangle-left:nth-of-type(2) {
+	animation: colors-six 11s infinite;
+	margin-right: 2px;
+}
+.triangle-left:nth-of-type(3) {
+	animation: colors 11s infinite;
+	margin-right: 2px;
+}
+.triangle-right:nth-of-type(2) {
+	animation: colors-five 11s infinite;
+	margin-left: 2px;
+}
+.triangle-right:nth-of-type(3) {
+	animation: colors-two 11s infinite;
+	margin-left: 2px;
 }
 .right {
 	text-align: right;
