@@ -103,7 +103,7 @@ label {
       display: inline-block;
       width: 8px;
       height: 8px;
-      margin-right: 6px;
+      margin-right: 2px;
       -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
       clip-path: polygon(100% 0, 0 50%, 100% 100%);
       animation: colors-two 11s infinite;
@@ -129,7 +129,7 @@ label {
 }
 .triangle-left:nth-of-type(3) {
 	animation: colors 11s infinite;
-	margin-right: 2px;
+	margin-right: 6px;
 }
 .triangle-right:nth-of-type(2) {
 	animation: colors-five 11s infinite;
@@ -301,7 +301,7 @@ label {
 	position: absolute;
 	height: 100%;
 	width: 96%;
-	background-color: #555;
+	background-color: #383a3b;
 	overflow: scroll;
 	transition: all 1.2s ease-in-out;
 	left: -100%;
