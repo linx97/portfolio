@@ -111,6 +111,18 @@ label {
       -moz-transition: all 400ms ease-in;
       transition: all 500ms ease-in;
 }
+.triangle-left:nth-of-type(2) {
+	animation: colors-six 11s infinite;
+}
+.triangle-left:nth-of-type(3) {
+	animation: colors 11s infinite;
+}
+.triangle-rightt:nth-of-type(2) {
+	animation: colors-five 11s infinite;
+}
+.triangle-rightt:nth-of-type(3) {
+	animation: colors-two 11s infinite;
+}
 .triangle-right {
       display: inline-block;
       width: 8px;
@@ -443,6 +455,7 @@ label {
     background-color: #008BFF; }
   100% {
     background-color: #FF0082; } }
+
 @keyframes colors-two {
   0% {
     background-color: #FF0082; }
@@ -462,3 +475,33 @@ label {
     background-color: #FF0082; }
   100% {
     background-color: #F7FF00; } }
+
+@keyframes colors-four {
+  0% {
+    background-color: #F7FF00; }
+  33% {
+    background-color: #008BFF; }
+  66% {
+    background-color: #FF0082; }
+  100% {
+    background-color: #F7FF00; } }
+
+@keyframes colors-five {
+  0% {
+    background-color: #008BFF; }
+  16.5% {
+    background-color: #FF0082; }
+  82.5% {
+    background-color: #F7FF00; }
+  100% {
+    background-color: #008BFF; } }
+
+@keyframes colors-six {
+  0% {
+    background-color: #008BFF; }
+  33% {
+    background-color: #FF0082; }
+  66% {
+    background-color: #F7FF00; }
+  100% {
+    background-color: #008BFF; } }
