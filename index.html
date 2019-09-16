@@ -16,128 +16,128 @@
 	<script type="text/javascript" src="./script.js"></script>
 </head>
 <body>
-	<div class="holder">
-		<div class="social">
-			<a href="https://github.com/linx97"><img src="./images/github-logo.png"></a>
-			<a href="https://www.linkedin.com/in/linx-latham-109769107"><img src="./images/linkedin-logo.png" alt=""></a>
-		</div>
+	<div class="page-content">
+		<div class="holder">
+			<div class="social">
+				<a href="https://github.com/linx97"><img src="./images/github-logo.png"></a>
+				<a href="https://www.linkedin.com/in/linx-latham-109769107"><img src="./images/linkedin-logo.png" alt=""></a>
+			</div>
 
-		<div class="text">
-			<p>hi, I'm</p>
-			<h1>LINX</h1>
-			<hr>
-			<h4>{{ designer || developer }}</h4>
-		</div>
-
+			<div class="text">
+				<p>hi, I'm</p>
+				<h1>LINX</h1>
+				<hr>
+				<h4>{{ designer || developer }}</h4>
+			</div>
+		</div>	
 		<div class="box">
 			<form action="https://formspree.io/linxlatham@gmail.com" method="POST">
 				<p>want to talk?</p>
 				<input type="text" name="name" placeholder="name" required="required" />
 			    <input type="email" name="_reply2" placeholder="email" required="required" />
 			    <textarea placeholder="message" onkeyup="adjust_textarea(this)" name="message" required="required"></textarea>
-			    <input class="send">
+			    <div class="send"></div>
 			</form>
 			
 			<div class="nav">
 				
-				<div class="left"><p class="about-link">< about</p></div>
-				<div class="right"><p class="work-link">work ></p></div>
+				<div class="left"><p class="about-link"><span class="triangle-left"></span><span class="triangle-left"></span><span class="triangle-left"></span>about</p></div>
+				<div class="right"><p class="work-link">work<span class="triangle-right"></span><span class="triangle-right"></span><span class="triangle-right"></span></p></div>
 			</div>
-		</div>
-	</div>
-
-	<div class="work-holder">
-		<img src="./images/cancel.png" class="work-close">
-		<h1>My Work</h1>
-		<div class="container">
-			<div class="row">
-				<hr>
-				<div class="col-md-7">
-					<img src="./images/withlove-home.png" alt="">
-				</div>
-				<div class="col-md-5">
-					<h3>WithLove</h3>
-					<p>WithLove is a full-stack web application that allows users to easily record and send personalized e-cards. The cards can be from a single person or a group and are complete with self-selected background music and playback animation.</p>
-					<ul>
-						<li>Technologies used: HTML, CSS, Javascript, Node, Mongo, Angular2</li>
-						<li>Implementation of audio API and binary server</li>
-						<li>Custom logo</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<hr>
-				<div class="col-md-7">
-					<img src="./images/nerdwerds.png" alt="">
-				</div>
-				<div class="col-md-5">
-					<h3>NERDWERDS</h3>
-					<p>NERDWERDS was a game created during an 'educational tool' themed hackathon. Its purpose is to help beginner coders with term recognition. The user drags and drops words into labeled buckets and is scored based on performance.</p>
-					<ul>
-						<li>Technologies used: HTML, CSS, Javascript, Node, Express, JSON, Git</li>
-						<li>Use of JQuery word cloud and drag and drop</li>
-						<li>As team leader, I delegated tasks and made final decisions</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<hr>
-				<div class="col-md-7">
-					<img src="./images/tree-mockup" alt="">
-				</div>
-				<div class="col-md-5">
-					<h3>Personal Project</h3>
-					<p>For a personal project, I redesigned a local arborist website. I wanted to give it a more modern look and maintain responsiveness across all devices.</p>
-					<ul>
-						<li>Technologies used: HTML, CSS, Javascript, JQuery</li>
-						<li>Responsive deisgn using Bootstrap</li>
-						<li>Created design mockup in Photoshop</li>
-					</ul>
-					<a href="http://linx97.github.io/">View Full Website</a>
-				</div>
-			</div>
-			<div class="row">
-				<hr>
-				<div class="col-md-7">
-					<img src="./images/sltwtr.png" alt="">
-				</div>
-				<div class="col-md-5">
-					<h3>Internship</h3>
-					<p>These are some of the websites I was involved with building and maintaining during my internship at SLTWTR Digital Agency. This opportunity gave me invaluable experience working on real world projeccts and a professional development team.</p>
-					<ul>
-						<li>WordPress, Squarespace, and Shopify websites using CRM tools and custom HTML/CSS</li>
-						<li>Search Engine Optimization</li>
-						<li>Agile environment</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="about-holder">
-		<img src="./images/cancel2.png" class="about-close">
-		<h1>About Me</h1>
-		<hr>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="linx-background">
-						<img class="linx-pic" src="./images/image11.jpg" alt="">
+		</div>	
+		<div class="work-holder">
+			<img src="./images/cancel.png" class="work-close">
+			<h1>My Work</h1>
+			<div class="container">
+				<div class="row">
+					<hr>
+					<div class="col-md-7">
+						<img src="./images/withlove-home.png" alt="">
+					</div>
+					<div class="col-md-5">
+						<h3>WithLove</h3>
+						<p>WithLove is a full-stack web application that allows users to easily record and send personalized e-cards. The cards can be from a single person or a group and are complete with self-selected background music and playback animation.</p>
+						<ul>
+							<li>Technologies used: HTML, CSS, Javascript, Node, Mongo, Angular2</li>
+							<li>Implementation of audio API and binary server</li>
+							<li>Custom logo</li>
+						</ul>
 					</div>
 				</div>
-				<div class="col-md-5">
-					<p>As an experienced web designer and full-stack developer, I love getting creative with technology. My passion lies in building beautiful web applications, from idea inception to completion of the final product. I care about the full stack and enjoy doing both front-end and back-end work.</p>
-					<h3>SKills</h3>
-					<ul>
-						<li>HTML5, CSS3, SASS, JavaScript, JQuery, Ajax</li>
-						<li>Node, Express, MongoDB, Mongoose</li>
-						<li>Angular2</li>
-						<li>Responsive design/Bootstrap</li>
-						<li>Agile/Scrum Methodologies</li>
-						<li>Version control using Git</li>
-						<li>Adobe Photoshop and Illustrator</li>
-						<li>Search Engine Optimization</li>
-					</ul>
+				<div class="row">
+					<hr>
+					<div class="col-md-7">
+						<img src="./images/nerdwerds.png" alt="">
+					</div>
+					<div class="col-md-5">
+						<h3>NERDWERDS</h3>
+						<p>NERDWERDS was a game created during an 'educational tool' themed hackathon. Its purpose is to help beginner coders with term recognition. The user drags and drops words into labeled buckets and is scored based on performance.</p>
+						<ul>
+							<li>Technologies used: HTML, CSS, Javascript, Node, Express, JSON, Git</li>
+							<li>Use of JQuery word cloud and drag and drop</li>
+							<li>As team leader, I delegated tasks and made final decisions</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<hr>
+					<div class="col-md-7">
+						<img src="./images/tree-mockup" alt="">
+					</div>
+					<div class="col-md-5">
+						<h3>Personal Project</h3>
+						<p>For a personal project, I redesigned a local arborist website. I wanted to give it a more modern look and maintain responsiveness across all devices.</p>
+						<ul>
+							<li>Technologies used: HTML, CSS, Javascript, JQuery</li>
+							<li>Responsive deisgn using Bootstrap</li>
+							<li>Created design mockup in Photoshop</li>
+						</ul>
+						<a href="http://linx97.github.io/">View Full Website</a>
+					</div>
+				</div>
+				<div class="row">
+					<hr>
+					<div class="col-md-7">
+						<img src="./images/sltwtr.png" alt="">
+					</div>
+					<div class="col-md-5">
+						<h3>Internship</h3>
+						<p>These are some of the websites I was involved with building and maintaining during my internship at SLTWTR Digital Agency. This opportunity gave me invaluable experience working on real world projeccts and a professional development team.</p>
+						<ul>
+							<li>WordPress, Squarespace, and Shopify websites using CRM tools and custom HTML/CSS</li>
+							<li>Search Engine Optimization</li>
+							<li>Agile environment</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="about-holder">
+			<img src="./images/cancel2.png" class="about-close">
+			<h1>About Me</h1>
+			<hr>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="linx-background">
+							<img class="linx-pic" src="./images/image11.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-md-5">
+						<p>As an experienced web designer and full-stack developer, I love getting creative with technology. My passion lies in building beautiful web applications, from idea inception to completion of the final product. I care about the full stack and enjoy doing both front-end and back-end work.</p>
+						<h3>SKills</h3>
+						<ul>
+							<li>HTML5, CSS3, SASS, JavaScript, JQuery, Ajax</li>
+							<li>Node, Express, MongoDB, Mongoose</li>
+							<li>Angular2</li>
+							<li>Responsive design/Bootstrap</li>
+							<li>Agile/Scrum Methodologies</li>
+							<li>Version control using Git</li>
+							<li>Adobe Photoshop and Illustrator</li>
+							<li>Search Engine Optimization</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
