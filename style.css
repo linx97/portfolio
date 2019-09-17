@@ -40,7 +40,9 @@ body {
 .box {
 	height: 100%;
 	width: 25%;
-	background-color: #fff;
+	color: #fff;
+    opacity: 0.93;
+    background-color: #15191d;
 	position: absolute;
 	float: left;
 	left: 0;
@@ -83,6 +85,7 @@ label {
 	font-weight: bold;
 }
 .nav {
+	font-family: 'Playfair Display', serif;
 	position: absolute;
 	bottom: 10px;
     width: 100%;
