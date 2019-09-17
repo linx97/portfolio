@@ -13,9 +13,18 @@
 	  src="https://code.jquery.com/jquery-3.1.1.min.js"
 	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
 	<script type="text/javascript" src="./script.js"></script>
 </head>
 <body>
+	<div id="ball"></div>
+	<div class="loading-screen two">
+		<p>loading<span class="loading-dots">.</span><span class="loading-dots">.</span><span class="loading-dots">.</span></p>
+		<div id="progressbar">
+		  <span id="loading"></span>
+		</div>
+	</div>
+	<div class="loading-screen one"></div>
 	<div class="page-content">
 		<div class="holder">
 			<div class="social">
@@ -25,30 +34,47 @@
 
 			<div class="text">
 				<p>hi, I'm</p>
-				<h1>LINX</h1>
+				<svg id="name-svg" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 698 265"><defs></defs><title>linx</title><polygon class="name-3 colored rect-4" points="517 250 491 249 668 15 693 15 517 250"/><rect class="name-2 rect-2 colored" x="279.5" y="112" width="23.5" height="137.5"/><rect class="name-1 colored rect-3" x="448" y="15" width="22.5" height="149"/><rect class="name" y="15" width="90" height="213"/><rect class="name" x="169" y="15" width="90" height="234"/><polygon class="name" points="279 0 470 153 470 265 279 112 279 0"/><polygon class="name" points="491 15.75 603 250 698 250 585 15.38 491 15.75"/><rect class="name-3 colored rect-1" y="228" width="151" height="21"/></svg>
 				<hr>
 				<h4>{{ designer || developer }}</h4>
 			</div>
 		</div>	
 		<div class="box">
-			<form action="https://formspree.io/linxlatham@gmail.com" method="POST">
-				<p>want to talk?</p>
-				<input type="text" name="name" placeholder="name" required="required" />
-			    <input type="email" name="_reply2" placeholder="email" required="required" />
-			    <textarea placeholder="message" onkeyup="adjust_textarea(this)" name="message" required="required"></textarea>
-			    <div class="send"></div>
-			</form>
-			
-			<div class="nav">
-				
-				<div class="left"><p class="about-link"><span class="triangle-left"></span><span class="triangle-left"></span><span class="triangle-left"></span>about</p></div>
-				<div class="right"><p class="work-link">work<span class="triangle-right"></span><span class="triangle-right"></span><span class="triangle-right"></span></p></div>
+			<div class="box-inner">
+				<form action="https://formspree.io/linxlatham@gmail.com" method="POST">
+					<p>want to talk?</p>
+					<input type="text" name="name" placeholder="name" required="required" />
+				    <input type="email" name="_reply2" placeholder="email" required="required" />
+				    <textarea placeholder="message" onkeyup="adjust_textarea(this)" name="message" required="required"></textarea>
+				    <div class="send"></div>
+				</form>
+				<div class="nav">
+					<div class="left"><p class="about-link"><span class="triangle-left"></span>about</p></div>
+					<div class="right"><p class="work-link">work<span class="triangle-right"></span></p></div>
+				</div>	
 			</div>
 		</div>	
 		<div class="work-holder">
 			<img src="./images/cancel.png" class="work-close">
 			<h1>My Work</h1>
 			<div class="container">
+				<div class="row">
+					<hr>
+					<div class="col-md-7">
+						<img src="./images/wedding.png" alt="">
+					</div>
+					<div class="col-md-5">
+						<h3>M|K</h3>
+						<p>I designed and built this website for a friend's wedding. Now their friends and family can see photos, get info and directions, visit their registry, and RSVP all in one convenient place. It even has a countdown to the special day!</p>
+						<ul>
+							<li>Created mockup and manipulated photos in Photoshop</li>
+							<li>Created custom logo and graphics in Illustrator</li>
+							<li>Coded from the ground up, no template used</li>
+							<li>Optimized user experience with Javascript, JQuery and CSS keyframe animations</li>
+						</ul>
+						<a href="http://linx97.github.io/matt-and-kelsey">View Full Website</a>
+					</div>
+				</div>
 				<div class="row">
 					<hr>
 					<div class="col-md-7">
@@ -85,7 +111,7 @@
 						<img src="./images/tree-mockup" alt="">
 					</div>
 					<div class="col-md-5">
-						<h3>Personal Project</h3>
+						<h3>Website Re-design</h3>
 						<p>For a personal project, I redesigned a local arborist website. I wanted to give it a more modern look and maintain responsiveness across all devices.</p>
 						<ul>
 							<li>Technologies used: HTML, CSS, Javascript, JQuery</li>
@@ -101,13 +127,29 @@
 						<img src="./images/sltwtr.png" alt="">
 					</div>
 					<div class="col-md-5">
-						<h3>Internship</h3>
+						<h3>SLTWTR</h3>
 						<p>These are some of the websites I was involved with building and maintaining during my internship at SLTWTR Digital Agency. This opportunity gave me invaluable experience working on real world projeccts and a professional development team.</p>
 						<ul>
 							<li>WordPress, Squarespace, and Shopify websites using CRM tools and custom HTML/CSS</li>
 							<li>Search Engine Optimization</li>
 							<li>Agile environment</li>
 						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<hr>
+					<div class="col-md-7">
+						<img src="./images/candy.gif" alt="">
+					</div>
+					<div class="col-md-5">
+						<h3>CandyAddict</h3>
+						<p>I had some fun with CSS when I built this mock website about my favorite thing- candy! It is a <strong>pretend</strong> e-commerce website for people who love sugar as much as I do.</p>
+						<ul>
+							<li>Design aspects include images, colors, layout, typography, and a custom logo</li>
+							<li>CSS animations using keyframes</li>
+							<li>Responsive design with Bootstrap</li>
+						</ul>
+						<a href="https://linx97.github.io/candyaddict/">View Full Website</a>
 					</div>
 				</div>
 			</div>
@@ -125,7 +167,7 @@
 						</div>
 					</div>
 					<div class="col-md-5">
-						<p>As an experienced web designer and full-stack developer, I love getting creative with technology. My passion lies in building beautiful web applications, from idea inception to completion of the final product. I care about the full stack and enjoy doing both front-end and back-end work.</p>
+						<p>As an experienced web designer and developer, I love getting creative with technology. My passion lies in building beautiful web applications, from idea inception to completion of the final product.</p>
 						<h3>SKills</h3>
 						<ul>
 							<li>HTML5, CSS3, SASS, JavaScript, JQuery, Ajax</li>
