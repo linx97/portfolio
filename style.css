@@ -377,7 +377,7 @@ animation: fillup-three 11s infinite; }
       animation: colors-three 11s infinite;
       position: absolute;
       left: -26px;
-      top: 3px; }
+      top: 8px; }
 
 .work-holder ul li:nth-of-type(2):before {
   animation: colors-two 11s infinite; }
