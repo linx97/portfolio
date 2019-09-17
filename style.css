@@ -365,6 +365,30 @@ animation: fillup-three 11s infinite; }
 	padding: 0 30px;
 }
 
+.work-holder ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    position: relative; }
+.work-holder ul li:before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 20px;
+      animation: colors-three 11s infinite;
+      position: absolute;
+      left: -26px;
+      top: 3px; }
+
+.work-holder ul li:nth-of-type(2):before {
+  animation: colors-two 11s infinite; }
+
+.work-holder ul li:nth-of-type(3):before {
+  animation: colors-six 11s infinite; }
+
+.work-holder ul li:nth-of-type(4):before {
+  animation: colors-five 11s infinite; }
+
+
 /*** ABOUT ***/
 .about-holder {
 	font-family: 'Arsenal', sans-serif;
