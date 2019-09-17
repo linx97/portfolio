@@ -388,11 +388,11 @@ animation: fillup-three 11s infinite; }
 	padding: 0 30px;
 }
 
-.work-holder ul li {
+ul li {
     list-style: none;
     margin-bottom: 12px;
     position: relative; }
-.work-holder ul li:before {
+ul li:before {
       content: '';
       width: 10px;
       height: 10px;
@@ -402,13 +402,13 @@ animation: fillup-three 11s infinite; }
       left: -26px;
       top: 8px; }
 
-.work-holder ul li:nth-of-type(2):before {
+ul li:nth-of-type(2):before, ul li:nth-of-type(6):before {
   animation: colors-two 11s infinite; }
 
-.work-holder ul li:nth-of-type(3):before {
+ul li:nth-of-type(3):before, ul li:nth-of-type(7):before {
   animation: colors-six 11s infinite; }
 
-.work-holder ul li:nth-of-type(4):before {
+ul li:nth-of-type(4):before, ul li:nth-of-type(8):before {
   animation: colors-five 11s infinite; }
 
 
@@ -434,6 +434,7 @@ animation: fillup-three 11s infinite; }
 	top: 30px;
 	width: 24px;
 	opacity: .8;
+  z-index: 200;
 	transition: transform 0.1s linear;
 }
 .about-close:hover {
@@ -466,7 +467,7 @@ animation: fillup-three 11s infinite; }
 }
 .about-holder h1 {
 	text-align: center;
-    margin: 100px 0 40px 0;
+    margin: 60px 0 40px 0;
     font-family: 'Playfair Display', serif;
 }
 .about-holder hr {
@@ -513,7 +514,8 @@ animation: fillup-three 11s infinite; }
 .frame {
   height: 97vh;
   width: 85.5vh;
-  margin: auto;
+  margin: 20px auto 0;
+  z-index: 100;
   -webkit-perspective: 1000; }
 
 .head {
@@ -533,48 +535,48 @@ animation: fillup-three 11s infinite; }
   border-radius: 50%; }
 
 .l10 {
-  background: url("../img/l10.png") no-repeat;
+  background: url("images/l10.png") no-repeat;
   -webkit-transform: translateZ(0px); }
 
 .l9 {
-  background: url("../img/l9.png") no-repeat;
+  background: url("images/l9.png") no-repeat;
   -webkit-transform: translateZ(5px); }
 
 .l8 {
-  background: url("../img/l8.png") no-repeat;
+  background: url("images/l8.png") no-repeat;
   -webkit-transform: translateZ(10px); }
 
 .l7 {
-  background: url("../img/l7.png") no-repeat;
+  background: url("images/l7.png") no-repeat;
   -webkit-transform: translateZ(15px); }
 
 .l6 {
-  background: url("../img/l6.png") no-repeat;
+  background: url("images/l6.png") no-repeat;
   -webkit-transform: translateZ(20px); }
 
 .l5 {
-  background: url("../img/l5.png") no-repeat;
+  background: url("images/l5.png") no-repeat;
   -webkit-transform: translateZ(25px); }
 
 .l4 {
-  background: url("../img/l4.png") no-repeat;
+  background: url("images/l4.png") no-repeat;
   -webkit-transform: translateZ(30px); }
 
 .l3 {
-  background: url("../img/l3.png") no-repeat;
+  background: url("images/l3.png") no-repeat;
   -webkit-transform: translateZ(35px);
   opacity: 0.7; }
 
 .l2 {
-  background: url("../img/l2.png") no-repeat;
+  background: url("images/l2.png") no-repeat;
   -webkit-transform: translateZ(40px); }
 
 .l1 {
-  background: url("../img/l1.png") no-repeat;
+  background: url("images/l1.png") no-repeat;
   -webkit-transform: translateZ(45px); }
 
 .l0 {
-  background: url("../img/l0.png") no-repeat;
+  background: url("images/l0.png") no-repeat;
   -webkit-transform: translateZ(50px); }
 
 .necklace-svg {
@@ -931,8 +933,8 @@ animation: fillup-three 11s infinite; }
 
 .l2 .triangle {
   opacity: 0.4;
-  height: 42.4px;
-  width: 39.7px;
+  height: 5.6%;
+  width: 5.9%;
   left: 47%;
   top: 38.3%;
   animation: colors-five 11s infinite; }
@@ -1015,8 +1017,8 @@ animation: fillup-three 11s infinite; }
 
 .l1 .triangle {
   opacity: 0.5;
-  height: 37px;
-  width: 29px;
+  height: 4.8%;
+  width: 4.2%;
   left: 47.8%;
   top: 40.3%;
   animation: colors-two 11s infinite; }
@@ -1069,9 +1071,6 @@ animation: fillup-three 11s infinite; }
   	}
 }
 @media (max-width: 767px) {
-	.box {
-		top: 330px;
-	}
 	form {
 		margin-top: 30px;
 	}
@@ -1097,6 +1096,29 @@ animation: fillup-three 11s infinite; }
 	#ball {
 		display: none;
 	}
+  .frame {
+    height: 60vh;
+    width: 52.9vh;
+  }
+  .linx-background {
+    width: 160px;
+    height: 160px;
+    margin-top: -3%;
+  }
+  .linx-pic {
+    width: 150px;
+  }
+}
+@media (max-width: 340px) {
+  .text h4 {
+    font-size: 1.3em;
+  }
+  form p {
+    font-size: 1em;
+  }
+  input[type="text"], input[type="email"], textarea {
+    height: 28px;
+  }
 }
 
 /*** Keyframes ***/
