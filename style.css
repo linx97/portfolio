@@ -106,7 +106,7 @@ label {
       display: inline-block;
       width: 8px;
       height: 8px;
-      margin-right: 3px;
+      margin-right: 2px;
       -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
       clip-path: polygon(100% 0, 0 50%, 100% 100%);
       animation: colors-two 11s infinite;
@@ -118,13 +118,29 @@ label {
       display: inline-block;
       width: 8px;
       height: 8px;
-      margin-left: 3px;
+      margin-left: 6px;
       -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
       clip-path: polygon(100% 50%, 0 0, 0 100%);
       animation: colors-three 11s infinite;
       -webkit-transition: all 400ms ease-in;
       -moz-transition: all 400ms ease-in;
       transition: all 500ms ease-in;
+}
+.triangle-left:nth-of-type(2) {
+	animation: colors-six 11s infinite;
+	margin-right: 2px;
+}
+.triangle-left:nth-of-type(3) {
+	animation: colors 11s infinite;
+	margin-right: 6px;
+}
+.triangle-right:nth-of-type(2) {
+	animation: colors-five 11s infinite;
+	margin-left: 2px;
+}
+.triangle-right:nth-of-type(3) {
+	animation: colors-two 11s infinite;
+	margin-left: 2px;
 }
 .right {
 	text-align: right;
@@ -288,7 +304,7 @@ label {
 	position: absolute;
 	height: 100%;
 	width: 96%;
-	background-color: #555;
+	background-color: #383a3b;
 	overflow: scroll;
 	transition: all 1.2s ease-in-out;
 	left: -100%;
@@ -446,6 +462,7 @@ label {
     background-color: #008BFF; }
   100% {
     background-color: #FF0082; } }
+
 @keyframes colors-two {
   0% {
     background-color: #FF0082; }
@@ -465,3 +482,33 @@ label {
     background-color: #FF0082; }
   100% {
     background-color: #F7FF00; } }
+
+@keyframes colors-four {
+  0% {
+    background-color: #F7FF00; }
+  33% {
+    background-color: #008BFF; }
+  66% {
+    background-color: #FF0082; }
+  100% {
+    background-color: #F7FF00; } }
+
+@keyframes colors-five {
+  0% {
+    background-color: #008BFF; }
+  16.5% {
+    background-color: #FF0082; }
+  82.5% {
+    background-color: #F7FF00; }
+  100% {
+    background-color: #008BFF; } }
+
+@keyframes colors-six {
+  0% {
+    background-color: #008BFF; }
+  33% {
+    background-color: #FF0082; }
+  66% {
+    background-color: #F7FF00; }
+  100% {
+    background-color: #008BFF; } }
