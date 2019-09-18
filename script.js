@@ -17,7 +17,7 @@ $(document).ready(function() {
 	var loadingOne = anime({
 	  targets: '.loading-screen.one',
 	  translateY: '100%',
-	  easing: 'easeInSine',
+	  easing: 'easeInCirc',
 	  duration: 3000,
 	  delay: 15000
 	});
@@ -25,7 +25,7 @@ $(document).ready(function() {
 	var loadingOne = anime({
 	  targets: '.loading-screen.two',
 	  translateY: '-100%',
-	  easing: 'easeInSine',
+	  easing: 'easeInCirc',
 	  duration: 4000,
 	  delay: 15200
 	});
@@ -162,7 +162,12 @@ $(document).ready(function() {
 	}
 
 	$('.work-link').click(function() {
-		$('.work-holder').addClass('work-active');
+		var workOpen = anime({
+		  targets: '.work-holder',
+		  translateX: '100%',
+		  easing: 'easeInCirc',
+		  duration: 3000
+		});
 		$('.holder, .box-inner').addClass('inactive');
 	});
 	$('.work-close').click(function() {
