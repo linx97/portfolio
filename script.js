@@ -162,12 +162,7 @@ $(document).ready(function() {
 	}
 
 	$('.work-link').click(function() {
-		var workOpen = anime({
-		  targets: '.work-holder',
-		  translateX: '100%',
-		  easing: 'easeInCirc',
-		  duration: 3000
-		});
+		$('.work-holder').addClass('work-active');
 		$('.holder, .box-inner').addClass('inactive');
 	});
 	$('.work-close').click(function() {
