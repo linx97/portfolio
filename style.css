@@ -256,6 +256,7 @@ label {
 .send {
     width: 50px;
     clip-path: polygon(0 0, 100% 50%, 0 100%, 0 60%, 78% 50%, 0 40%);
+    -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%, 0 60%, 78% 50%, 0 40%);
     height: 45px;
     animation: colors 11s infinite;
     margin: 30px auto;
