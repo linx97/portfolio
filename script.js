@@ -184,16 +184,4 @@ $(document).ready(function() {
 	var name = $('form[name="name"]').val();
 	var email = $('form[name="_reply2"]').val();
 	var message = $('form[name="message"]').val();
-
-	
-	$('.send').click(function() {
-		if (name !== "" && email !== "" && message !== "") {
-			$('.message-sent').toggleClass('hide');
-			$('.dark').toggleClass('hide');
-		}
-	});
-	$('.ok').click(function() {
-		$('.message-sent').toggleClass('hide');
-		$('.dark').toggleClass('hide');
-	});
 });
