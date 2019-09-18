@@ -589,7 +589,7 @@ ul li:nth-of-type(4):before, ul li:nth-of-type(8):before {
 .l7 div {
   height: 3px;
   width: 3px;
-  opacity: 0.8; }
+  opacity: 0.9; }
 
 .l7 .circle:nth-child(1), .l7 .circle:nth-child(23) {
   top: 12.6%;
@@ -772,7 +772,7 @@ ul li:nth-of-type(4):before, ul li:nth-of-type(8):before {
 
 .l6 div {
   border-radius: 50%;
-  opacity: 0.7; }
+  opacity: 0.9; }
 
 .l6 .circle-0-left, .circle-0-right {
   width: 15.3px;
@@ -852,7 +852,7 @@ ul li:nth-of-type(4):before, ul li:nth-of-type(8):before {
   right: 22.7%; }
 
 .l5 .diamond {
-  opacity: 0.5;
+  opacity: 0.8;
   left: 46.4%;
   top: 25.2%;
   height: 7.25%;
@@ -862,7 +862,7 @@ ul li:nth-of-type(4):before, ul li:nth-of-type(8):before {
   animation: colors 11s infinite; }
 
 .l5 div {
-  opacity: 0.6;
+  opacity: 0.8;
   left: 48.4%;
   top: 46.2%;
   width: 3%;
@@ -885,7 +885,7 @@ ul li:nth-of-type(4):before, ul li:nth-of-type(8):before {
 
 .l4 div {
   border-radius: 50%;
-  opacity: 0.7; }
+  opacity: 0.9; }
 
 .l4 .circle-1-left, .l4 .circle-1-right {
   width: 2%;
@@ -936,7 +936,7 @@ ul li:nth-of-type(4):before, ul li:nth-of-type(8):before {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%) !important; }
 
 .l2 .triangle {
-  opacity: 0.4;
+  opacity: 0.7;
   height: 5.6%;
   width: 5.9%;
   left: 47%;
@@ -944,7 +944,7 @@ ul li:nth-of-type(4):before, ul li:nth-of-type(8):before {
   animation: colors-five 11s infinite; }
 
 .l1 div {
-  opacity: 0.6;
+  opacity: 0.9;
   height: 1.1%;
   width: 1.3%;
   -webkit-clip-path: polygon(20% 100%, 0 0, 100% 20%);
@@ -1020,7 +1020,7 @@ ul li:nth-of-type(4):before, ul li:nth-of-type(8):before {
   right: 39.45%; }
 
 .l1 .triangle {
-  opacity: 0.5;
+  opacity: 0.8;
   height: 4.8%;
   width: 4.2%;
   left: 47.8%;
