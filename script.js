@@ -17,7 +17,7 @@ $(document).ready(function() {
 	var loadingOne = anime({
 	  targets: '.loading-screen.one',
 	  translateY: '100%',
-	  easing: 'easeInCirc',
+	  easing: 'easeInBack',
 	  duration: 3000,
 	  delay: 15000
 	});
@@ -25,7 +25,7 @@ $(document).ready(function() {
 	var loadingOne = anime({
 	  targets: '.loading-screen.two',
 	  translateY: '-100%',
-	  easing: 'easeInCirc',
+	  easing: 'easeInBack',
 	  duration: 4000,
 	  delay: 15200
 	});
